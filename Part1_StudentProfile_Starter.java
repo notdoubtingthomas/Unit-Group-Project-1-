@@ -60,12 +60,7 @@ public class Part1_StudentProfile_Starter {
 
         // TODO 6: Call estimateGpa(totalHours, numCourses) (cap at 4.0).
 
-        System.out.print("Enter grade (as decimal): ");
-        double grade;
-        grade = input.nextDouble();
-        input.nextLine();
-
-        double gpa = estimateGpa(weeklyHours, numOfCourses, grade);
+        double gpa = estimateGpa(totalHours, numOfCourses);
 
         // TODO 7: Call printSummary(...) to display results.
 
@@ -89,9 +84,9 @@ public class Part1_StudentProfile_Starter {
        gpa = 2.0 + (totalHours / (numCourses * 20.0))
        cap at 4.0
      */
-    public static double estimateGpa(double totalHours, int numOfCourses, double grade) {
+    public static double estimateGpa(double totalHours, int numOfCourses) {
         // TODO
-        double gpa = grade + (totalHours / (numOfCourses * 20.0));
+        double gpa = 2.0 + (totalHours / (numOfCourses * 20.0));
 
         if (gpa > 4.0) {
             return 4.0;
