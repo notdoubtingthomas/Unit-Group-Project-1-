@@ -74,7 +74,7 @@ public class Part1_StudentProfile_Starter {
         // TODO
 
         double totalHours;
-        totalHours = (int)(weeklyHours * weeks);
+        totalHours = (weeklyHours * weeks);
 
         return totalHours;
     }
