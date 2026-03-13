@@ -91,9 +91,10 @@ public class Part1_StudentProfile_Starter {
      */
     public static double estimateGpa(double totalHours, int numOfCourses, double grade) {
         // TODO
-        double gpa = 0.0;
-        if (grade <= 4.0) {
-            gpa = grade + (totalHours / (numOfCourses * 20.0));
+        double gpa = grade + (totalHours / (numOfCourses * 20.0));
+
+        if (gpa > 4.0) {
+            return 4.0;
         }
 
         return gpa;
